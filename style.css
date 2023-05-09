@@ -1,0 +1,455 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right,
+  rgba(101, 63, 117, 0.6), 
+  rgba(235, 204, 247, 0.6), 
+  rgba(211, 132, 245, 0.6), 
+  rgba(117, 105, 122, 0.6), 
+  rgba(167, 105, 194, 0.6));
+  
+      
+}
+
+/* menu hamburguesa */
+
+.navbar-menu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-toggle {
+  display: block;
+  background: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.navbar-toggle .navbar-icon {
+  display: block;
+}
+/* fin menu hamburguesa */
+
+
+/* Header */
+.contenedorMenu {
+    display: flex;
+    
+   
+    padding: 10px 20px;
+    background-color: #333; 
+    color: #fff;
+
+    
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header.contenedorMenu {
+    
+   
+    height: 20vh;
+}
+ 
+ 
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav {
+    
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    white-space: nowrap;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+nav ul li {display: flex;
+    text-align: right;}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    text-align: center;
+    
+    
+}
+
+.logo {
+    position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.menuPrincipal {
+    
+    color: #bb5c93;
+    text-decoration: none;
+    font-size: 0,85vh;
+    text-shadow: 4px 4px 8px;
+  
+}
+
+
+
+#linea {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contenedorTitulo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+/* Sección principal */
+#contenedorPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+h1 {
+    float: left;
+    
+    margin: 0;
+    text-shadow: 4px 4px 8px;
+    color: white;
+    -webkit-text-stroke: 1.5px #bb5c93;
+    /* sino gusta el titulo intercambiar de lugares los colores */
+  
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+/* Productos destacados */
+.productosDestacados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.producto {
+    text-align: center;
+    margin-bottom: 40px;
+    width: calc(30.33% - 2%);
+    padding: 1%;
+        border: 1px solid #333; /* agregamos un borde de 1px de ancho y de color #333 */
+    background-color: white;
+        
+      }
+
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    }
+
+
+.producto h3 {
+    margin-bottom: 20px;
+
+    
+}
+
+.producto .precio {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.producto .botonComprar {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.div {
+   
+    border-color: 10px black;
+}
+
+
+.contenedorRedesContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+  }
+.listacontacto, .listaredes {
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+.listaredes {
+  display: flex;
+}
+.listaredes {
+  margin-left: 10px;
+}
+
+
+
+.redes {
+    
+    flex-direction: column;
+    display: inline;
+    align-items: center;
+    justify-content: left;
+    flex-grow: 1;
+    
+  }
+  
+  .whatsappContainer, .emailcontainer, .ubicacionContainer{
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .nroWhatsapp, .direccionCorreo, .ubicacion{
+    margin-left: 10px; /* Ajusta el espacio entre la imagen y el número */
+  }
+  
+
+
+
+
+
+  .redes ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .redes li {
+    margin: 10px 0;
+  }
+
+  .contacto {
+    display: flex;
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    flex-grow: 1;
+    
+  }
+
+  .contacto ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contacto li {
+    margin: 10px 0;
+  }
+
+  
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  footer h5 {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #ccc;
+  }
+ 
+  .acercaDeFooter {
+
+    padding: 0px 50px;
+  }
+
+  .menuFooter {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menuFooter ul {
+
+    align-self: stretch;
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .menuFooter li {
+
+    margin: 0.5em 0;
+  }
+  
+  
+
+/* Estilo móvil */
+@media only screen and (max-width: 767px) {
+    .producto {
+        width: 80%;
+        margin-bottom: 20px;
+     
+     /*menu hamburgesa */   
+     .navbar-menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+  
+    .navbar-menu li {
+      padding: 0.5rem;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    .navbar-toggle .navbar-icon {
+      display: none;
+    }
+  
+    .navbar-toggle {
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 0.5rem;
+    }
+  
+    .navbar-toggle span {
+      display: block;
+      width: 1.5rem;
+      height: 2px;
+      background-color: #e70505;
+      margin: 0.25rem;
+      border-radius: 2px;
+    }
+    /* fin menu hamburgesa*/
+        
+    }
+    header .contenedorMenu {
+      width: 100vh;
+    }
+    html {
+      width: 100vh;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+    }
+    ul.listaFooter {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex: 1;
+      max-width: 300px; /* ajusta el valor según sea necesario */
+  margin-right: 20px;
+    }
+    
+    .contenedorMenuContactoRedes {
+      display: flex;
+      justify-content: center;
+      display: inline;
+      
+    }
+
+    #logo {
+      width: 15vh;
+      height: 15vh;
+      border-radius: 50px;
+      text-align: center;
+      margin-top: -5vh;
+      justify-content: center;
+}
+
+      .logo {
+       
+       text-align: center;
+       
+      }
+
+    .contenedorTitulo {
+      justify-content: center;
+      margin-top: 15vh;
+    }
+
+
+    h1 {
+      
+      margin-top: 0px;
+      text-shadow: 4px 4px 8px;
+      color: white;
+      font-size: 4vh;
+      -webkit-text-stroke: 1.5px #bb5c93;
+    /* sino gusta el titulo intercambiar de lugares los colores */
+
+    }
+   
+    div.contacto {
+      padding-right: 20px;
+    }
+  }
+
